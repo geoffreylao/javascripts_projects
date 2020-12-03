@@ -8,12 +8,12 @@
 // All chars can be used
 
 console.log(balancedBrackets("{}[]"));
-console.log(balancedBrackets("{test)"));
+console.log(balancedBrackets("(trab{)}"));
 
 function balancedBrackets(str){
     const stack = []; // array to function as a stack
     let openBracket = ["{", "[", "("];
-    let closeBracket = ["}", "]", "("];
+    let closeBracket = ["}", "]", ")"];
 
     const dict = {
         "{" : "}",
